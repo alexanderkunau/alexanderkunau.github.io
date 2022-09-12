@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="../unpkg.com/ionicons%405.2.3/dist/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   </head>
   <body>
       <div class="banner">
@@ -58,6 +59,25 @@
     </footer>
     <script src="js/jquery.js"></script> <!-- Load Tilt.js library -->
 		<script src="js/tilt.jquery.js"></script> <!-- Load Tilt.js library -->
+    <script>
+      gsap.from(
+        ".container, .wrapper",
+        2,
+        {
+          y: "-200",
+          opacity: 0,
+          ease: Expo.easeInOut,
+          delay: 0.3,
+          stagger: 0.08,
+        }
+      );
+
+      gsap.from(".banner", 1, {
+        scale: 0,
+        ease: Elastic.easeOut,
+        delay: 2,
+      });
+    </script>
   </body>
 
 <!-- Mirrored from maker.madein.io/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 12 Sep 2022 19:32:41 GMT -->
