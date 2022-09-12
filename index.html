@@ -61,14 +61,14 @@
 		<script src="js/tilt.jquery.js"></script> <!-- Load Tilt.js library -->
     <script>
       gsap.from(
-        ".container, .wrapper",
+        ".container, .wrapper > .card-container",
         2,
         {
           y: "-200",
           opacity: 0,
           ease: Expo.easeInOut,
           delay: 0.3,
-          stagger: 0.08,
+          stagger: 0.03,
         }
       );
 
