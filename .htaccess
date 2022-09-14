@@ -1,4 +1,4 @@
 AuthType Basic
 AuthName "Password Protected Area"
-AuthUserFile ebcc-social-media-banner/.htpasswd
+AuthUserFile ./ebcc-social-media-banner/.htpasswd
 Require valid-user
