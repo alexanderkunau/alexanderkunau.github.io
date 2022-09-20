@@ -3,16 +3,81 @@
   src: url('../font/Champ-Regular.woff') format('woff');
 }
 
-html, body {
+@font-face {
+  font-family: 'Champ Regular';
+  src: url('../font/Champ-Regular.woff') format('woff');
+}
+
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #2600ff;
 }
 
-h1, h2, h3 {
+/* Banner top right */
+main .banner {
+  position: sticky;
+  bottom: 0%;
+  width: 16rem;
+  height: 6rem;
+  background-color: white;
+  text-align: right;
+  left: 100%;
+  border-radius: 0 0 0 50px;
+}
+
+main .banner h4 {
+  color: #2600ff;
+  font-family: "Champ Regular";
+  position: absolute;
+  left: 20%;
+  text-align: center;
+  top: 30%;
+  float: left;
+  font-size: 1.2rem;
+}
+
+main .banner h5 {
+  color: #2600ff;
+  font-family: "Champ Regular";
+  position: absolute;
+  left: 20%;
+  text-align: center;
+  top: 52%;
+  float: left;
+  font-size: 0.8rem;
+}
+
+h1,
+h2,
+h3 {
   font-family: "Champ Regular";
   font-size: 4.4vw;
   color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  h1,
+  h2,
+  h3 {
+    font-family: "Champ Regular";
+    font-size: 8vw;
+    color: white;
+  }
+
+  main h1 img {
+    width: 7%;
+    margin-left: 1.3%;
+    position: relative;
+    bottom: 10%;
+    transform: translateZ(0px);
+    animation-duration: 4s;
+    animation-name: wiggle;
+    animation-play-state: running;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
 }
 
 h1 img {
@@ -27,36 +92,47 @@ h1 img {
   animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
+
+
 @keyframes wiggle {
   2% {
-      transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
   }
+
   4% {
-      transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
   }
+
   6% {
-      transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
   }
+
   8% {
-      transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
   }
+
   10% {
-      transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
   }
+
   12% {
-      transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
   }
+
   14% {
-      transform: translateX(2px) rotate(1deg);
+    transform: translateX(2px) rotate(1deg);
   }
+
   16% {
-      transform: translateX(-2px) rotate(-1deg);
+    transform: translateX(-2px) rotate(-1deg);
   }
+
   18% {
-      transform: translateX(1px) rotate(0deg);
+    transform: translateX(1px) rotate(0deg);
   }
+
   20% {
-      transform: translateX(-1px) rotate(0deg);
+    transform: translateX(-1px) rotate(0deg);
   }
 }
 
@@ -65,14 +141,15 @@ img {
   margin-left: 2%;
 }
 
-.container {
+/* Headline */
+main .title_container {
   width: 100%;
   text-align: center;
-  margin-top: 8%;
-  margin-bottom: 8%;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
 }
 
-a {
+main a {
   position: relative;
   outline: none;
   text-decoration: none;
@@ -89,109 +166,88 @@ a {
   margin-right: auto;
   margin-top: 3%;
 }
-a span {
+
+main a span {
   color: #2600ff;
   font-size: 20px;
   font-family: "Champ Regular";
   text-align: center;
 }
-a:hover {
+
+main a:hover {
   animation: rotate 0.7s ease-in-out both;
 }
-a:hover span {
+
+main a:hover span {
   animation: storm 0.7s ease-in-out both;
   animation-delay: 0.06s;
 }
 
-a span img {
-    width: 7.5%;
-    vertical-align: bottom;
+main a span img {
+  width: 7.5%;
+  vertical-align: bottom;
 }
 
 @keyframes rotate {
   0% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
+
   25% {
     transform: rotate(3deg) translate3d(0, 0, 0);
   }
+
   50% {
     transform: rotate(-3deg) translate3d(0, 0, 0);
   }
+
   75% {
     transform: rotate(1deg) translate3d(0, 0, 0);
   }
+
   100% {
     transform: rotate(0deg) translate3d(0, 0, 0);
   }
 }
+
 @keyframes storm {
   0% {
     transform: translate3d(0, 0, 0) translateZ(0);
   }
+
   25% {
     transform: translate3d(4px, 0, 0) translateZ(0);
   }
+
   50% {
     transform: translate3d(-3px, 0, 0) translateZ(0);
   }
+
   75% {
     transform: translate3d(2px, 0, 0) translateZ(0);
   }
+
   100% {
     transform: translate3d(0, 0, 0) translateZ(0);
   }
 }
 
-.banner {
-  position: sticky;
-  bottom: 0%;
-  width: 250px;
-  height: 100px;
-  background-color: white;
-  text-align: right;
-  left: 100%;
-  border-radius: 0 0 0 50px;
-}
-
-.banner h4 {
-  color: #2600ff;
-  font-family: "Champ Regular";
-  position: absolute;
-  left: 20%;
-  text-align: center;
-  top: 30%;
-  float: left;
-  font-size: 18px;
-}
-
-.banner h5 {
-  color: #2600ff;
-  font-family: "Champ Regular";
-  position: absolute;
-  left: 20%;
-  text-align: center;
-  top: 52%;
-  float: left;
-  font-size: 12px;
-}
-
+/* Grid Servies */
 .wrapper {
-  width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  gap: 1.2rem;
   justify-content: center;
-  align-items: center;
-  gap: 20px;
-  position: relative;
-  margin-bottom: 5%;
+  margin-bottom: 6rem;
 }
 
 .card-container {
   position: relative;
   background: #fff;
   color: #000;
-  width: 31%;
-  height: 35vh;
+  width: 34em;
+  height: 20em;
   transition: all 0.2s ease-out;
   overflow: hidden;
   border-radius: 50px;
@@ -278,8 +334,6 @@ a span img {
   animation: float-text 40s linear infinite;
   animation-delay: 0.3s;
   z-index: 2;
-  /* border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff; */
   opacity: 0;
   padding: 20px 0;
   mix-blend-mode: difference;
@@ -303,24 +357,42 @@ a span img {
   opacity: 1;
 }
 
-/*
-footer {
-  position: relative;
-  top: 0%;
-  width: 50%;
-  height: 100px;
-  background-color: white;
-  left: 25%;
-  border-radius: 50px 50px 50px 50px;
-  z-index: 1000;
-  margin-bottom: 1.5%;
+@media only screen and (max-width: 600px) {
+  .card-container {
+    position: relative;
+    background: #fff;
+    color: #000;
+    width: 34em;
+    height: 20em;
+    transition: all 0.2s ease-out;
+    overflow: hidden;
+    border-radius: 50px;
+    font-family: "Champ Regular";
+    cursor: pointer;
+    margin: 0px 20px;
+  }
 }
 
-footer p {
-  font-family: "Champ Regular";
-  font-size: 1.5vw;
+#footer-content {
+  display: inline-block;
+  background-color: #ffffff;
+  width: 100%;
   text-align: center;
-  align-items: baseline;
-  margin-top: 10%;
+  padding: 15px 0px;
+  position: static;
+  bottom: 0%;
+  margin-bottom: 0%;
 }
-*/
+
+img {
+  vertical-align: middle;
+  margin-left: 0.2%;
+  width: 5%;
+  cursor: pointer;
+}
+
+p {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Champ Regular";
+}

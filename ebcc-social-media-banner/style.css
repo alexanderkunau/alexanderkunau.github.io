@@ -419,4 +419,28 @@ h1,h2,h3,h4,h5,h6,p,label,.btn,a{
   margin-top: 80px;
 }
 
+#footer-content {
+	display: inline-block;
+	background-color: #ffffff;
+	width: 100%;
+	text-align: center;
+	padding: 15px 0px;
+	position: sticky;
+	top: 100%;
+  }
+  
+  img {
+	vertical-align: middle;
+	margin-left: 0.2%;
+	width: 5%;
+	cursor: pointer;
+  }
+  
+  p {
+	display: inline-block;
+	vertical-align: middle;
+	font-family: "Garnett Regular";
+	margin-bottom: 0%;
+  }
+
 
