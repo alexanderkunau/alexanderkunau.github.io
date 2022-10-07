@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'BentonSans Regular';
+  src: url('font/BentonSans-Regular.ttf') format('ttf');
+  src: url('font/BentonSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'BentonSans Bold';
+  src: url('font/BentonSans-Bold.ttf') format('ttf');
+  src: url('font/BentonSans-Bold.woff') format('woff');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "BentonSans Regular";
+  font-size: 14px;
+  margin: 36px 0 12px 36px;
+}
+
+input[type=file] {
+  margin: 0 0 0 36px;
+}
+
+input[type=text] {
+  text-align: left;
+  background-color: #ECF0F1;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 200;
+  padding: 10px;
+  width: 450px;
+  border: 1px solid #003064;
+  margin: 0 0 0 36px;
+  font-family: "BentonSans Regular";
+}
+
+button {
+  background-color: #003064;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  border: none;
+  font-family: "BentonSans Regular";
+  transition: 0.15s;
+  cursor: pointer;
+  margin-left: 36px;
+}
+
+button:hover {
+  background-color: #04478e;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  border: none;
+  font-family: "BentonSans Regular";
+  transition: 0.15s;
+  cursor: pointer;
+  margin-left: 36px;
+}
+
+textarea {
+  margin: 0 0 0 36px;
+  font-family: "BentonSans Regular";
+  background-color: #ECF0F1;
+  padding: 10px;
+  border: 1px solid #03203A;
+  resize: none;
+  font-size: 14px;
+}
