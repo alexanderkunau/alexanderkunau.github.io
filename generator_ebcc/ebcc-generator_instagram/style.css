@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'Garnett Regular';
+  src: url('font/Garnett-Regular.ttf') format('ttf');
+  src: url('font/Garnett-Regular.woff') format('woff');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Garnett Regular";
+  font-size: 14px;
+  margin: 36px 0 12px 36px;
+}
+
+input[type=file] {
+  margin: 0 0 0 36px;
+}
+
+input[type=text] {
+  text-align: left;
+  background-color: #ECF0F1;
+  border: 2px solid transparent;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px;
+  width: 450px;
+  border: 1px solid #03203A;
+  margin: 0 0 0 36px;
+}
+
+button {
+  background-color: #03203A;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  border: none;
+  font-family: "Garnett Regular";
+  transition: 0.15s;
+  cursor: pointer;
+  margin-left: 36px;
+}
+
+button:hover {
+  background-color: #f03c37;
+  color: white;
+  padding: 20px 20px 20px 20px;
+  text-decoration: none;
+  border: none;
+  font-family: "Garnett Regular";
+}
+
+textarea {
+  margin: 0 0 0 36px;
+  font-family: "Garnett Regular";
+  background-color: #ECF0F1;
+  padding: 10px;
+  border: 1px solid #03203A;
+  resize: none;
+}
