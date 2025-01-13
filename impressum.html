@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#141414">
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.1/ScrollTrigger.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="centered-container">
+    <h1 class="centered-text">Website ist für die mobile Ansicht aktuell in Bearbeitung.</h1>
+  </div>
+
+    <nav>
+        <div class="logo"><p onclick="window.location.href='index.html';">Home</p></div>
+        <div class="menu-open-btn"><p>Menü</p></div>
+      </nav>
+    
+      <div class="menu-overlay">
+        <div class="menu-nav">
+          <div class="menu-logo"><p onclick="window.location.href='index.html';">Home</p></div>
+          <div class="menu-close-btn"><p>Close</p></div>
+        </div>
+        <div class="menu-cols">
+          <div class="col">
+            <div class="col">
+              <div class="video">
+                <div class="video-preview" onclick="window.location.href='bidt_konferenz_installation.html';"></div>
+                <div class="video-details">
+                  <p onclick="window.location.href='bidt_konferenz_installation.html';">
+                    Zur aktuellen Case Study
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="menu-link">
+              <h4 onclick="window.location.href='index.html';">Home</h4>
+            </div>
+            <div class="menu-link">
+              <h4 onclick="window.location.href='case_studies.html';">Case Studies</h4>
+            </div>
+            <div class="menu-link">
+              <h4 onclick="window.location.href='leistungen.html';">Leistungen</h4>
+            </div>
+            <div class="menu-link">
+              <h4 onclick="window.location.href='research.html';">Research</h4>
+            </div>
+            <div class="menu-link">
+              <h4 onclick="window.location.href='mailto:alexanderkunau@gmx.de?subject=Hallo!';">Kontakt</h4>
+            </div>
+          </div>
+        </div>
+        <div class="menu-footer">
+          <div class="menu-divider"></div>
+          <div class="menu-footer-copy">
+            <div class="slogan"><p>Alexander Kunau™</p></div>
+            <div class="socials">
+              <p onclick="window.location.href='impressum.html';">Impressum</p>
+                <p onclick="window.location.href='datenschutz.html';">Datenschutz</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <div id="cursor">
+        <div class="cursor__circle"></div>
+    </div>
+
+
+    <div class="sticky-container">
+        <div class="sticky-element" id="stickyBtn">
+            <div class="white-circle">
+                <img class="sticky-image" src="img/arrow-up.svg" alt="Bild">
+            </div>
+        </div>
+    </div>
+
+    <section class="case_study__container">
+        <div class="case_study__container_headline">
+            <h1>Impressum</h1>
+        </div>
+        <div class="case_study__container_subheadline">
+        </div>
+    </section>
+
+    <hr class="lab-section-divider-top">
+
+    <section class="impressum_datenschutz_container">
+
+        <h4>Angaben gem&auml;&szlig; &sect; 5 TMG</h4>
+        <br>
+        <p>Max Mustermann<br />
+            Musterstra&szlig;e 111<br />
+            Geb&auml;ude 44<br />
+            90210 Musterstadt</p>
+        <br>
+        <br>
+        <h4>Kontakt</h4>
+        <br>
+        <p>Telefon: +49 (0) 123 44 55 66<br />
+            Telefax: +49 (0) 123 44 55 99<br />
+            E-Mail: mustermann@musterfirma.de</p>
+
+        <p>Quelle: <a href="https://www.e-recht24.de">e-recht24.de</a></p>
+    </section>
+
+    <footer class="box">
+
+      <div class="contact-information-left">
+        <!-- Left text part -->
+        <span>Alexander Kunau</span><br>
+        <span>015253952935</span><br>
+        <span>mail@alexanderkunau.de</span>
+      </div>
+      <div class="contact-information-middle">
+        <!-- Middle text part -->
+        <span onclick="window.location.href='case_studies.html';">Case Studies</span><br>
+        <span onclick="window.location.href='leistungen.html';">Leistungen</span><br>
+        <span onclick="window.location.href='mailto:alexanderkunau@gmx.de?subject=Hallo!';">Kontakt</span>
+      </div>
+      <div class="contact-information-right">
+        <!-- Right text part -->
+        <span onclick="window.location.href='impressum.html';">Impressum</span><br>
+        <span onclick="window.location.href='datenschutz.html';">Datenschutz</span><br>
+      </div>
+
+    </footer>
+    </main>
+
+    <script src="js/app.js"></script>
+    <script>
+        gsap.from(
+            ".case_study__container_headline, .lab-section-divider-top, .lab-section, .lab-section-divider-middle, .impressum_datenschutz_container, footer",
+            2, {
+                y: "200",
+                opacity: 0,
+                ease: Expo.easeInOut,
+                delay: 0.2,
+                stagger: 0.05,
+            }
+        );
+    </script>
+</body>
+
+</html>
